@@ -2,7 +2,7 @@
 
 var db = require('../connection/connection');
 const mongoose = require('mongoose');
-const register = mongoose.model('Employee');
+const register = mongoose.model('User');
 var cryptography = require('../helper/cryptography');
 
 
