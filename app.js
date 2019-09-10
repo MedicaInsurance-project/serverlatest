@@ -31,7 +31,6 @@ const nodemailer = require('./connection/nodemail');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-var employees = require('./routes/employees');
 var contactus = require('./routes/contactUs');
 
 var app = express();
@@ -121,8 +120,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-app.use('/employees', employees);
-app.use('/contactus',contactus)
+app.use('/contactus', contactus)
 
 
 // error handler

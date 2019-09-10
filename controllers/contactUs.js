@@ -82,7 +82,7 @@ contactusController.save = function (req, res) {
             res.send(contactus)
             //sendEmail(mail);
 
-        }
+        };
     });
 };
 
@@ -115,7 +115,7 @@ contactusController.delete = function (req, res) {
             res.redirect("/contactus");
         }
     });
-};
+}
 
 //exporting the contact us controller 
 module.exports = contactusController;

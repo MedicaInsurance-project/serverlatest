@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 
-var EmployeeSchema = new mongoose.Schema({
+var customerSchema = new mongoose.Schema({
   userID: String,
   name: String,
   phone: Number,
@@ -9,5 +9,5 @@ var EmployeeSchema = new mongoose.Schema({
   updated_at: { type: Date, default: Date.now },
 });
 
-var Employee =mongoose.model('Employee', EmployeeSchema);
-module.exports = Employee;
+var User =mongoose.model('User', customerSchema);
+module.exports = User;
